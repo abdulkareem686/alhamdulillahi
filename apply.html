@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form - Bright Future Secondary School</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@latest"></script>
+    <style>
+        /* Custom styles for the form */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .form-section {
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            background-color: #f7fafc; /* Light background */
+            border-radius: 0.5rem; /* Rounded corners */
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Subtle shadow */
+        }
+        .form-section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #1a56db; /* Primary color */
+            border-bottom: 2px solid #e0e7ff;
+            padding-bottom: 0.5rem;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #4a5568; /* Darker text */
+            margin-bottom: 0.5rem;
+        }
+        .form-control {
+            width: 100%;
+            padding: 0.75rem;
+            border-radius: 0.375rem; /* Rounded corners */
+            border: 1px solid #e2e8f0; /* Light border */
+            font-size: 1rem;
+            color: #2d3748; /* Dark text */
+            transition: border-color 0.2s ease; /* Smooth transition */
+            outline: none;
+        }
+        .form-control:focus {
+            border-color: #1a56db; /* Highlight on focus */
+            box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2); /* Focus shadow */
+        }
+        .form-select {
+            width: 100%;
+            padding: 0.75rem;
+            border-radius: 0.375rem;
+            border: 1px solid #e2e8f0;
+            font-size: 1rem;
+            color: #2d3748;
+            transition: border-color 0.2s ease;
+            outline: none;
+        }
+         .form-select:focus {
+            border-color: #1a56db;
+            box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+        }
+
+        .radio-group {
+            display: flex;
+            align-items: center;
+        }
+        .radio-label {
+            margin-right: 1rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #4a5568;
+        }
+        .radio-input {
+            margin-right: 0.5rem;
+        }
+
+        .submit-button {
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            background-color: #1a56db; /* Primary color */
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+            border: none;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .submit-button:hover {
+            background-color: #1240ab; /* Darker shade on hover */
+            transform: translateY(-1px);
+        }
+        .submit-button:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5); /* Focus shadow */
+        }
+
+        .alert {
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border-radius: 0.375rem;
+            font-size: 1rem;
+        }
+        .alert-success {
+            background-color: #f0fdf4;
+            color: #15803d;
+            border: 1px solid #16a34a;
+        }
+        .alert-danger {
+            background-color: #fee2e2;
+            color: #b91c1c;
+            border: 1px solid #dc2626;
+        }
+
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto mt-8 p-4 bg-white rounded-lg shadow-md">
+        <h1 class="text-2xl font-semibold text-center text-blue-700 mb-6">AL-hamdulillahi Academy- Application Form</h1>
+
+        <form id="application-form" class="form-horizontal">
+            <div id="form-message" class="alert alert-info hidden"></div>
+
+            <section class="form-section">
+                <h2 class="form-section-title">Personal Information</h2>
+                <div class="form-group">
+                    <label for="surname" class="form-label">passport</label>
+                    <input type="file" class="form-control" id="surname" name="pass" placeholder="" required>
+                    <div class="invalid-feedback">Please enter your surname</div>
+                </div>
+                <div class="form-group">
+                    <label for="surname" class="form-label">Surname</label>
+                    <input type="text" class="form-control" id="surname" name="surname" placeholder="Enter your surname" required>
+                    <div class="invalid-feedback">Please enter your surname</div>
+                </div>
+                <div class="form-group">
+                    <label for="first-name" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="first-name" name="first-name" placeholder="Enter your first name" required>
+                     <div class="invalid-feedback">Please enter your first name</div>
+                </div>
+                <div class="form-group">
+                    <label for="middle-name" class="form-label">Middle Name</label>
+                    <input type="text" class="form-control" id="middle-name" name="middle-name" placeholder="Enter your middle name (optional)">
+                </div>
+                <div class="form-group">
+                    <label for="date-of-birth" class="form-label">Date of Birth</label>
+                    <input type="date" class="form-control" id="date-of-birth" name="date-of-birth" required>
+                    <div class="invalid-feedback">Please enter your date of birth</div>
+                </div>
+                <div class="form-group">
+                    <label for="gender" class="form-label">Gender</label>
+                    <div class="radio-group">
+                        <input type="radio" class="radio-input" id="gender-male" name="gender" value="male" required>
+                        <label for="gender-male" class="radio-label">Male</label>
+                        <input type="radio" class="radio-input" id="gender-female" name="gender" value="female" required>
+                        <label for="gender-female" class="radio-label">Female</label>
+                    </div>
+                    <div class="invalid-feedback">Please select your gender</div>
+                </div>
+                <div class="form-group">
+                    <label for="state-of-origin" class="form-label">State of Origin</label>
+                    <input type="text" class="form-control" id="state-of-origin" name="state-of-origin" placeholder="Enter your state of origin" required>
+                    <div class="invalid-feedback">Please enter your state of origin</div>
+                </div>
+                <div class="form-group">
+                    <label for="local-government-area" class="form-label">Local Government Area</label>
+                    <input type="text" class="form-control" id="local-government-area" name="local-government-area" placeholder="Enter your local government area" required>
+                    <div class="invalid-feedback">Please enter your local government area</div>
+                </div>
+                <div class="form-group">
+                    <label for="address" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="address" name="address" placeholder="Enter your address" required>
+                    <div class="invalid-feedback">Please enter your address</div>
+                </div>
+                 <div class="form-group">
+                    <label for="phone-number" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone-number" name="phone-number" placeholder="Enter your phone number" required>
+                    <div class="invalid-feedback">Please enter your phone number</div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" required>
+                    <div class="invalid-feedback">Please enter a valid email address</div>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <h2 class="form-section-title">Educational Information</h2>
+                <div class="form-group">
+                    <label for="last-school" class="form-label">Last School Attended</label>
+                    <input type="text" class="form-control" id="last-school" name="last-school" placeholder="Enter the name of your last school" required>
+                    <div class="invalid-feedback">Please enter the name of your last school</div>
+                </div>
+                <div class="form-group">
+                    <label for="last-class" class="form-label">Last Class Attended</label>
+                    <input type="text" class="form-control" id="last-class" name="last-class" placeholder="Enter your last class attended" required>
+                    <div class="invalid-feedback">Please enter your last class attended</div>
+                </div>
+                <div class="form-group">
+                    <label for="intended-class" class="form-label">Intended Class</label>
+                     <select class="form-select" id="intended-class" name="intended-class" required>
+                        <option value="">Select Intended Class</option>
+                        <option value="jss1">Junior Secondary School 1 (JSS1)</option>
+                        <option value="jss2">Junior Secondary School 2 (JSS2)</option>
+                        <option value="jss3">Junior Secondary School 3 (JSS3)</option>
+                        <option value="sss1">Senior Secondary School 1 (SSS1)</option>
+                        <option value="sss2">Senior Secondary School 2 (SSS2)</option>
+                        <option value="sss3">Senior Secondary School 3 (SSS3)</option>
+                    </select>
+                    <div class="invalid-feedback">Please select your intended class</div>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <h2 class="form-section-title">Parent/Guardian Information</h2>
+                <div class="form-group">
+                    <label for="parent-name" class="form-label">Full Name of Parent/Guardian</label>
+                    <input type="text" class="form-control" id="parent-name" name="parent-name" placeholder="Enter full name of parent/guardian" required>
+                    <div class="invalid-feedback">Please enter the full name of your parent/guardian</div>
+                </div>
+                <div class="form-group">
+                    <label for="parent-relationship" class="form-label">Relationship to Applicant</label>
+                    <input type="text" class="form-control" id="parent-relationship" name="parent-relationship" placeholder="Enter relationship to applicant" required>
+                    <div class="invalid-feedback">Please enter your relationship to the applicant</div>
+                </div>
+                <div class="form-group">
+                    <label for="parent-phone-number" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="parent-phone-number" name="parent-phone-number" placeholder="Enter parent/guardian phone number" required>
+                    <div class="invalid-feedback">Please enter the phone number of your parent/guardian</div>
+                </div>
+                <div class="form-group">
+                    <label for="parent-email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="parent-email" name="parent-email" placeholder="Enter parent/guardian email address">
+                    <div class="invalid-feedback">Please enter a valid email address</div>
+                </div>
+                <div class="form-group">
+                    <label for="parent-address" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="parent-address" name="parent-address" placeholder="Enter parent/guardian address" required>
+                    <div class="invalid-feedback">Please enter the address of your parent/guardian</div>
+                </div>
+            </section>
+
+            <div class="mt-6">
+                <button type="submit" class="submit-button">Submit Application</button>
+            </div>
+            <div class="mt-6">
+                <button  class="submit-button">Back</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        (function () {
+            'use strict'
+
+            var forms = document.querySelectorAll('.form-horizontal')
+            var formMessage = document.getElementById('form-message');
+
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        } else {
+                            event.preventDefault(); // Prevent actual form submission for demo
+                            // Simulate form submission success
+                            formMessage.classList.remove('hidden', 'alert-danger');
+                            formMessage.classList.add('alert-success');
+                            formMessage.textContent = 'Application submitted successfully!';
+
+                            // Clear the form after successful submission (optional)
+                            form.reset();
+                            // Scroll to the message
+                            window.scrollTo({ top: formMessage.offsetTop, behavior: 'smooth' });
+
+                            // You would replace this with actual form submission logic (e.g., using fetch)
+                            // fetch('/your-server-endpoint', {
+                            //     method: 'POST',
+                            //     body: new FormData(form)
+                            // })
+                            // .then(response => {
+                            //     if (response.ok) {
+                            //         formMessage.classList.remove('hidden', 'alert-danger');
+                            //         formMessage.classList.add('alert-success');
+                            //         formMessage.textContent = 'Application submitted successfully!';
+                            //          form.reset();
+                            //     } else {
+                            //         formMessage.classList.remove('hidden', 'alert-success');
+                            //         formMessage.classList.add('alert-danger');
+                            //         formMessage.textContent = 'An error occurred. Please try again.';
+                            //     }
+                            // })
+                            // .catch(error => {
+                            //     formMessage.classList.remove('hidden', 'alert-success');
+                            //     formMessage.classList.add('alert-danger');
+                            //     formMessage.textContent = 'An error occurred. Please check your network connection.';
+                            // });
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+</body>
+</html>
