@@ -3,74 +3,535 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Al Hamdulillah Academy - Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Al Hamdulillah Academy - Islamic KG to Secondary School</title>
+    <meta name="description" content="Al Hamdulillah Academy provides quality Islamic education from KG to Secondary level with a balanced curriculum of academic and Islamic studies.">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo3.jpg" type="image/jpg">
 </head>
 <body>
+    <!-- Top Bar -->
+    <div class="top-bar bg-primary text-white py-2">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="top-bar-left text-center text-md-start mb-2 mb-md-0">
+                    <span class="d-block d-md-inline"><i class="fas fa-phone-alt me-2"></i> +123 456 7890</span>
+                    <span class="mx-3 d-none d-md-inline">|</span>
+                    <span class="d-block d-md-inline"><i class="fas fa-envelope me-2"></i> info@alhamdulillahacademy.edu</span>
+                </div>
+                <div class="top-bar-right">
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="text-white mx-2" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white mx-2" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white ms-2" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="img/logo.png" alt="Al Hamdulillah Academy Logo" width="50" height="50" class="d-inline-block align-text-top">
-                Al Hamdulillah Academy
+                <img src="images/logo2.png" alt="Al Hamdulillah Academy" height="70" class="me-2">
+               
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+            
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about.html">Our Academy</a></li>
+                            <li><a class="dropdown-item" href="mission.html">Mission & Vision</a></li>
+                            <li><a class="dropdown-item" href="staff.html">Our Staff</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button" data-bs-toggle="dropdown">
+                            Academics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="early-years.html">Early Years (KG & Nursery)</a></li>
+                            <li><a class="dropdown-item" href="primary.html">Primary School</a></li>
+                            <li><a class="dropdown-item" href="secondary.html">Secondary School</a></li>
+                            <li><a class="dropdown-item" href="quran-program.html">Quran Program</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
+                        <a class="nav-link" href="admissions.html">Admissions</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="courses.html">Courses</a>
+                        <a class="nav-link" href="gallery.html">Gallery</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
+                
+                <div class="ms-lg-3 mt-3 mt-lg-0">
+                    <a href="admissions.html" class="btn btn-primary">
+                        <i class="fas fa-edit me-1"></i> Apply Now
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <section class="hero-section text-center bg-primary text-white py-5">
-        <div class="container">
-            <h1 class="display-4">Welcome to Al Hamdulillah Academy</h1>
-            <p class="lead">Nurturing knowledge, fostering faith, building futures.</p>
-            <a href="courses.html" class="btn btn-warning btn-lg">Explore Our Courses</a>
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/photo_2025-04-28_14-44-30.jpg" class="d-block w-100" alt="KG Students Learning">
+                    <div class="carousel-caption">
+                        <h1>Nurturing Young Muslims from KG to Secondary</h1>
+                        <p>Quality Islamic Education in a Caring Environment</p>
+                        <div>
+                            <a href="early-years.html" class="btn btn-primary me-2">Early Years</a>
+                            <a href="admissions.html" class="btn btn-outline-light">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/pic2.jpg" class="d-block w-100" alt="Primary Students">
+                    <div class="carousel-caption text-end">
+                        <h1>Strong Foundation in Primary Education</h1>
+                        <p>Grades 1-6 with Integrated Islamic Curriculum</p>
+                        <a href="primary.html" class="btn btn-primary">Primary School</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/image6.jpg" class="d-block w-100" alt="Secondary Students">
+                    <div class="carousel-caption text-start">
+                        <h1>Preparing Secondary Students for Success</h1>
+                        <p>JSS 1-3 and SSS 1-3 with Academic Excellence</p>
+                        <a href="secondary.html" class="btn btn-primary">Secondary School</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </section>
 
-    <main class="container my-5">
-        <div class="row">
-            <div class="col-md-8">
-                <h2>Our Mission</h2>
-                <p>Al Hamdulillah Academy is dedicated to providing high-quality Islamic and contemporary education, empowering students with knowledge, character, and leadership skills.</p>
-                <p>We strive to create a nurturing environment where students can excel academically, morally, and spiritually.</p>
+    <!-- School Levels Section -->
+    <section class="levels-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2>Our Educational Levels</h2>
+                <p class="lead">Comprehensive Islamic education from early years to secondary</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Early Years -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="level-card">
+                        <div class="level-icon">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                        <h3>Early Years</h3>
+                        <ul class="level-classes">
+                            <li>KG 1 (Age 3-4)</li>
+                            <li>KG 2 (Age 4-5)</li>
+                            <li>Nursery 1 (Age 5-6)</li>
+                            <li>Nursery 2 (Age 6-7)</li>
+                        </ul>
+                        <a href="early-years.html" class="btn btn-outline-primary">Learn More</a>
+                    </div>
                 </div>
-            <div class="col-md-4">
-                <h3>Quick Links</h3>
-                <ul class="list-group">
-                    <li class="list-group-item"><a href="about.html">About Our History</a></li>
-                    <li class="list-group-item"><a href="courses.html">View All Courses</a></li>
-                    <li class="list-group-item"><a href="contact.html">Enroll Now!</a></li>
-                </ul>
+                
+                <!-- Primary School -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="level-card">
+                        <div class="level-icon">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <h3>Primary School</h3>
+                        <ul class="level-classes">
+                            <li>Primary 1</li>
+                            <li>Primary 2</li>
+                            <li>Primary 3</li>
+                            <li>Primary 4</li>
+                            <li>Primary 5</li>
+                            <li>Primary 6</li>
+                        </ul>
+                        <a href="primary.html" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Junior Secondary -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="level-card">
+                        <div class="level-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3>Junior Secondary</h3>
+                        <ul class="level-classes">
+                            <li>JSS 1</li>
+                            <li>JSS 2</li>
+                            <li>JSS 3</li>
+                        </ul>
+                        <a href="secondary.html" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Senior Secondary -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="level-card">
+                        <div class="level-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Senior Secondary</h3>
+                        <ul class="level-classes">
+                            <li>SSS 1</li>
+                            <li>SSS 2</li>
+                            <li>SSS 3</li>
+                        </ul>
+                        <a href="secondary.html" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </main>
+    </section>
 
-    <footer class="bg-dark text-white text-center py-4">
+    <!-- Features Section -->
+    <section class="features-section py-5 bg-light">
         <div class="container">
-            <p>&copy; 2025 Al Hamdulillah Academy. All rights reserved.</p>
-            <p><a href="#" class="text-white">Privacy Policy</a> | <a href="#" class="text-white">Terms of Service</a></p>
+            <div class="section-header text-center mb-5">
+                <h2>Why Choose Our Academy?</h2>
+                <p class="lead">What makes Al Hamdulillah Academy special</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-quran"></i>
+                        </div>
+                        <h4>Daily Quran Studies</h4>
+                        <p>All students participate in daily Quran recitation and memorization appropriate for their age level.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h4>National Curriculum</h4>
+                        <p>We follow the national curriculum while integrating Islamic values across all subjects.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-pray"></i>
+                        </div>
+                        <h4>Islamic Environment</h4>
+                        <p>Daily prayers, Islamic etiquette, and character development are part of our daily routine.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h4>Qualified Teachers</h4>
+                        <p>Our staff are certified in both their academic subjects and Islamic studies.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h4>Technology Integration</h4>
+                        <p>Smart classrooms and computer labs prepare students for the digital age.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                        <h4>Extracurricular Activities</h4>
+                        <p>Sports, arts, and Islamic competitions to develop well-rounded students.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admissions Process -->
+    <section class="admissions-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="images/logo3.jpg" alt="Admissions Process" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title">Admissions Process</h2>
+                    <p>We welcome applications for all grade levels throughout the year, subject to availability.</p>
+                    
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h5>Application</h5>
+                                <p>Complete the online application form and submit required documents</p>
+                            </div>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h5>Assessment</h5>
+                                <p>Students will be assessed for appropriate grade placement</p>
+                            </div>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h5>Interview</h5>
+                                <p>Parent and student interview with school administration</p>
+                            </div>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h5>Admission</h5>
+                                <p>Receive acceptance letter and complete registration</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <a href="admissions.html" class="btn btn-primary me-2">Admission Requirements</a>
+                        <a href="fees.html" class="btn btn-outline-primary">Fee Structure</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2>What Parents Say</h2>
+                <p class="lead">Hear from our school community</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="rating mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"My daughter in KG 2 has learned so many surahs already. The teachers make learning fun and engaging for young children."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/parent1.jpg" alt="Parent" class="rounded-circle">
+                            <div>
+                                <h6>Parent of KG 2 Student</h6>
+                                <small>Early Years Parent</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="rating mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"The transition from primary to JSS was seamless. The teachers truly care about each student's academic and Islamic development."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/parent2.jpg" alt="Parent" class="rounded-circle">
+                            <div>
+                                <h6>Parent of JSS 2 Student</h6>
+                                <small>Secondary Parent</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="rating mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p>"Primary 4 has been wonderful for my son. He's excelling in both his academic subjects and Quran memorization."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/parent3.jpg" alt="Parent" class="rounded-circle">
+                            <div>
+                                <h6>Parent of Primary 4 Student</h6>
+                                <small>Primary Parent</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-3">Ready to Join Our Academy?</h2>
+            <p class="lead mb-4">Limited spaces available for 2024/2025 academic session</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                <a href="admissions.html" class="btn btn-light btn-lg">Apply Now</a>
+                <a href="contact.html" class="btn btn-outline-light btn-lg">Contact Us</a>
+                <a href="tour.html" class="btn btn-outline-light btn-lg">Schedule a Tour</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-about mb-4">
+                        <img src="images/logo-white.png" alt="Al Hamdulillah Academy" class="mb-3" height="60">
+                        <p>Providing quality Islamic education from KG to Secondary level since 2010.</p>
+                        
+                        <div class="footer-contact mt-4">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>123 Islamic Way, Muslim Town, Country</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>+123 456 7890</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>info@alhamdulillahacademy.edu</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="footer-title">Academics</h5>
+                    <ul class="footer-links">
+                        <li><a href="early-years.html">Early Years (KG & Nursery)</a></li>
+                        <li><a href="primary.html">Primary School (P1-P6)</a></li>
+                        <li><a href="secondary.html">Secondary (JSS1-SSS3)</a></li>
+                        <li><a href="quran-program.html">Quran Program</a></li>
+                        <li><a href="calendar.html">Academic Calendar</a></li>
+                        <li><a href="uniform.html">School Uniform</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="footer-title">Newsletter</h5>
+                    <p>Subscribe for school updates and announcements.</p>
+                    
+                    <form class="newsletter-form">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <h5 class="footer-title mt-4">Connect With Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 border-secondary">
+            
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2010-2024 Al Hamdulillah Academy. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-links small">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <span class="mx-2">|</span>
+                        <a href="terms.html">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top btn btn-primary rounded-circle shadow">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
     <script src="js/script.js"></script>
 </body>
 </html>
