@@ -1,0 +1,1068 @@
+:root {
+    --primary-color: #2E8B57;
+    --secondary-color: #1A5D1A;
+    --accent-color: #D4AF37;
+    --light-color: #f8f9fa;
+    --dark-color: #1E3A1F;
+    --text-color: #333333;
+    --text-light: #6c757d;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+/* Arabic font for Islamic elements */
+.arabic {
+    font-family: 'Noto Naskh Arabic', serif;
+}
+
+/* Top Bar */
+.top-bar {
+    font-size: 0.9rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+.top-bar a {
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.top-bar a:hover {
+    opacity: 0.8;
+}
+
+/* Navigation */
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 0.8rem 0;
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled .navbar-brand img {
+    height: 50px;
+}
+
+.nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    color: var(--dark-color);
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-color);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+    width: calc(100% - 2rem);
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    padding: 0.5rem 1.5rem;
+}
+
+.dropdown-item:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Hero Banner */
+.hero-banner {
+    margin-top: 0;
+}
+
+.carousel-item {
+    height: 90vh;
+    min-height: 500px;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.carousel-caption {
+    bottom: 30%;
+    text-align: center;
+}
+
+.carousel-caption h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+/* School Levels */
+.levels-section {
+    background-color: white;
+}
+
+.level-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.level-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.level-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.level-card h3 {
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.level-classes {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.level-classes li {
+    padding: 0.3rem 0;
+    border-bottom: 1px dashed #eee;
+}
+
+/* Features */
+.feature-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.feature-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Admissions Process */
+.process-steps {
+    position: relative;
+    padding-left: 3rem;
+    margin: 2rem 0;
+}
+
+.process-step {
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.process-step:last-child {
+    padding-bottom: 0;
+}
+
+.step-number {
+    position: absolute;
+    left: -3rem;
+    top: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.step-content {
+    padding-left: 1rem;
+}
+
+.step-content h5 {
+    color: var(--primary-color);
+}
+
+/* Testimonials */
+.testimonial-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+.testimonial-content {
+    margin-bottom: 1.5rem;
+}
+
+.rating {
+    color: var(--accent-color);
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-author img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.testimonial-author h6 {
+    margin-bottom: 0.2rem;
+    color: var(--primary-color);
+}
+
+.testimonial-author small {
+    color: var(--text-light);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-color);
+}
+
+.footer-title {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background-color: var(--accent-color);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+    padding-left: 5px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-item i {
+    margin-top: 3px;
+    margin-right: 1rem;
+    color: var(--accent-color);
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+/* Back to Top */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.back-to-top.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* About Pages */
+.page-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/logo3.jpg') center/cover no-repeat;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.breadcrumb {
+    background: transparent;
+    justify-content: center;
+}
+
+.breadcrumb-item a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}
+
+.breadcrumb-item.active {
+    color: var(--accent-color);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Our Academy Page */
+.about-image {
+    position: relative;
+}
+
+.years-badge {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background: var(--accent-color);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.years-badge small {
+    display: block;
+    font-size: 0.7rem;
+}
+
+.about-features {
+    margin-top: 2rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.feature-item i {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin-right: 1rem;
+    margin-top: 5px;
+}
+
+.about-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.about-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.about-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.facility-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.facility-content {
+    padding: 1.5rem;
+    background: white;
+}
+
+.facility-content h5 {
+    color: var(--primary-color);
+}
+
+/* Mission & Vision Page */
+.mission-card, .vision-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.mission-icon, .vision-icon {
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+}
+
+.mission-points {
+    margin-top: 1.5rem;
+}
+
+.point-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.point-item i {
+    margin-right: 1rem;
+    margin-top: 3px;
+}
+
+.vision-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.feature-box {
+    background: rgba(46, 139, 87, 0.05);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.feature-box i {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.feature-box h5 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.value-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.value-card i {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.value-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Our Staff Page */
+.staff-category {
+    color: var(--primary-color);
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--accent-color);
+    margin-bottom: 2rem;
+}
+
+.staff-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.staff-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.staff-info {
+    padding: 1.5rem;
+    background: white;
+}
+
+.staff-info h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.position {
+    font-weight: 600;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.qualification {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.staff-social {
+    margin-top: 1rem;
+}
+
+.staff-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.staff-social a:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.join-team {
+    background: rgba(46, 139, 87, 0.05);
+    padding: 3rem;
+    border-radius: 10px;
+}
+
+.join-team h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Academic Program Pages */
+.page-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/program-bg.jpg') center/cover no-repeat;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.program-overview {
+    padding: 80px 0;
+}
+
+/* Early Years */
+.grade-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.grade-header {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.grade-header h3 {
+    margin-bottom: 0.5rem;
+}
+
+.grade-content {
+    padding: 1.5rem;
+    background: white;
+}
+
+.grade-content ul {
+    padding-left: 1rem;
+}
+
+.grade-content li {
+    margin-bottom: 0.5rem;
+}
+
+.schedule-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.schedule-item {
+    display: flex;
+    margin-bottom: 1.5rem;
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.schedule-time {
+    flex: 0 0 120px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.schedule-content {
+    flex: 1;
+}
+
+.schedule-content h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Primary School */
+.subject-card {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+.subject-icon {
+    flex: 0 0 60px;
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-right: 1.5rem;
+}
+
+.subject-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.subject-content ul {
+    padding-left: 1.2rem;
+}
+
+.subject-content li {
+    margin-bottom: 0.5rem;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    height: 100%;
+    width: 2px;
+    background: var(--primary-color);
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 100px;
+    margin-bottom: 3rem;
+}
+
+.timeline-grade {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.timeline-content {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.timeline-content h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Secondary School */
+.program-structure {
+    margin-top: 3rem;
+}
+
+.structure-item {
+    margin-bottom: 2rem;
+}
+
+.structure-level {
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.structure-level h3 {
+    margin-bottom: 0.2rem;
+}
+
+.structure-content {
+    padding-left: 1rem;
+}
+
+.program-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.program-title {
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--accent-color);
+    margin-bottom: 1.5rem;
+}
+
+.specializations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.specialization {
+    background: rgba(46, 139, 87, 0.05);
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.specialization h5 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.life-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.life-icon {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+}
+
+.life-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.life-card ul {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.life-card li {
+    margin-bottom: 0.5rem;
+}
+
+/* Quran Program */
+.level-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.level-header {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.level-header h3 {
+    margin-bottom: 0.5rem;
+}
+
+.level-content {
+    padding: 1.5rem;
+    background: white;
+}
+
+.level-content ul {
+    padding-left: 1rem;
+}
+
+.level-content li {
+    margin-bottom: 0.5rem;
+}
+
+.hifz-features {
+    margin-top: 2rem;
+}
+
+.hifz-features .feature-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.hifz-features .feature-item i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    margin-top: 5px;
+}
+
+.hifz-features .feature-item h5 {
+    color: var(--primary-color);
+    margin-bottom: 0.3rem;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Apply animations to sections and cards */
+.page-header,
+.program-overview,
+.grade-card,
+.subject-card,
+.timeline-item,
+.program-card,
+.life-card,
+.level-card,
+.about-card,
+.facility-card,
+.mission-card,
+.vision-card,
+.value-card,
+.staff-card {
+    animation: fadeInUp 0.9s cubic-bezier(.4,2,.6,1) both;
+}
+
+.feature-card,
+.testimonial-card {
+    animation: scaleIn 0.8s cubic-bezier(.4,2,.6,1) both;
+}
+
+/* Animate navbar on load */
+.navbar {
+    animation: fadeIn 1s ease;
+}
+
+/* Animate .carousel-caption */
+.carousel-caption {
+    animation: fadeInUp 1.2s cubic-bezier(.4,2,.6,1) both;
+}
+
+/* Animate .join-team section */
+.join-team {
+    animation: fadeInUp 1.1s cubic-bezier(.4,2,.6,1) both;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .carousel-caption h1 {
+        font-size: 2.2rem;
+    }
+    
+    .carousel-caption p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 70vh;
+    }
+    
+    .carousel-caption {
+        bottom: 20%;
+    }
+    
+    .carousel-caption h1 {
+        font-size: 1.8rem;
+    }
+    
+    .navbar-collapse {
+        background-color: white;
+        padding: 1rem;
+        margin-top: 1rem;
+        border-radius: 5px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .subject-card {
+        flex-direction: column;
+    }
+    
+    .subject-icon {
+        margin-bottom: 1rem;
+    }
+    
+    .timeline::before {
+        left: 40px;
+    }
+    
+    .timeline-item {
+        padding-left: 80px;
+    }
+    
+    .timeline-grade {
+        width: 70px;
+        height: 70px;
+        font-size: 1rem;
+    }
+    
+    .timeline-content {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h1 {
+        font-size: 1.5rem;
+    }
+    
+    .carousel-caption .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .carousel-caption .btn:last-child {
+        margin-bottom: 0;
+    }
+    
+    .top-bar-left span {
+        display: block;
+        margin: 0.3rem 0;
+    }
+    
+    .top-bar-left span.mx-3 {
+        display: none;
+    }
+}
