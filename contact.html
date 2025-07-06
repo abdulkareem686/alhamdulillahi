@@ -3,110 +3,471 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Al-hamdullahi Academy Secondary School</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Al Hamdulillah Academy - Islamic KG to Secondary School</title>
+    <meta name="description" content="Al Hamdulillah Academy provides quality Islamic education from KG to Secondary level with a balanced curriculum of academic and Islamic studies.">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo3.jpg" type="image/jpg">
 </head>
 <body>
+    <!-- Top Bar -->
+    <div class="top-bar bg-primary text-white py-2">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="top-bar-left text-center text-md-start mb-2 mb-md-0">
+                    <span class="d-block d-md-inline"><i class="fas fa-phone-alt me-2"></i> +123 456 7890</span>
+                    <span class="mx-3 d-none d-md-inline">|</span>
+                    <span class="d-block d-md-inline"><i class="fas fa-envelope me-2"></i> info@alhamdulillahacademy.edu</span>
+                </div>
+                <div class="top-bar-right">
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="text-white mx-2" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white mx-2" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white ms-2" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark shadow-sm fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/logo-white.png" alt="School Logo" height="30" class="d-inline-block align-top me-2">
-                Al-hamdullahi Academy Sec. School
+                <img src="images/logo2.png" alt="Al Hamdulillah Academy" height="70" class="me-2">
+               
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+            
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link active" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about.html">Our Academy</a></li>
+                            <li><a class="dropdown-item" href="mission.html">Mission & Vision</a></li>
+                            <li><a class="dropdown-item" href="staff.html">Our Staff</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="academics.html">Academics</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button" data-bs-toggle="dropdown">
+                            Academics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="early-years.html">Early Years (KG & Nursery)</a></li>
+                            <li><a class="dropdown-item" href="primary.html">Primary School</a></li>
+                            <li><a class="dropdown-item" href="secondary.html">Secondary School</a></li>
+                            <li><a class="dropdown-item" href="quran-program.html">Quran Program</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="admissions.html">Admissions</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="events.html">Events</a>
+                        <a class="nav-link" href="gallery.html">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="contact.html">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
+                
+                <div class="ms-lg-3 mt-3 mt-lg-0">
+                    <a href="admissions.html" class="btn btn-primary">
+                        <i class="fas fa-edit me-1"></i> Apply Now
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
-
-    <section class="hero bg-light py-5 mt-5">
-        <div class="container">
-            <h1 class="display-4 fw-bold text-primary">Contact Al-hamdullahi Academy</h1>
-            <p class="lead text-muted">Get in touch with us for inquiries, feedback, or assistance.</p>
+    <!-- Page Header -->
+    <section class="page-header py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h1 class="display-4">Contact Us</h1>
+            <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">Contact</li>
+                </ol>
+            </nav>
         </div>
     </section>
 
-    <section class="py-5">
+    <!-- Contact Section -->
+    <section class="contact-section py-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
-                    <h2 class="mb-4">Send Us a Message</h2>
-                    <form id="contactForm">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Your Name</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-4">Get In Touch</h2>
+                    <p class="lead">We'd love to hear from you</p>
+                    <p>Whether you have questions about our programs, want to schedule a tour, or need more information about admissions, our team is here to help.</p>
+                    
+                    <div class="contact-info mt-5">
+                        <div class="info-item mb-4">
+                            <div class="d-flex">
+                                <div class="info-icon me-3">
+                                    <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5>Address</h5>
+                                    <p>123 Islamic Way, Muslim Town, Country</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Your Email</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                        <div class="info-item mb-4">
+                            <div class="d-flex">
+                                <div class="info-icon me-3">
+                                    <i class="fas fa-phone-alt fa-2x text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5>Phone</h5>
+                                    <p>Main Office: +123 456 7890</p>
+                                    <p>Admissions: +123 456 7891</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="subject" class="form-label">Subject</label>
-                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter the subject" required>
+                        <div class="info-item mb-4">
+                            <div class="d-flex">
+                                <div class="info-icon me-3">
+                                    <i class="fas fa-envelope fa-2x text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5>Email</h5>
+                                    <p>General Inquiries: info@alhamdulillahacademy.edu</p>
+                                    <p>Admissions: admissions@alhamdulillahacademy.edu</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                        <div class="info-item">
+                            <div class="d-flex">
+                                <div class="info-icon me-3">
+                                    <i class="fas fa-clock fa-2x text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5>Office Hours</h5>
+                                    <p>Monday-Friday: 8:00 AM - 4:00 PM</p>
+                                    <p>Saturday-Sunday: Closed</p>
+                                </div>
+                            </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
+                    </div>
+                    
+                    <div class="social-links mt-5">
+                        <h5 class="mb-3">Connect With Us</h5>
+                        <a href="#" class="social-icon me-3"><i class="fab fa-facebook-f fa-2x"></i></a>
+                        <a href="#" class="social-icon me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#" class="social-icon me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube fa-2x"></i></a>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h2 class="mb-4">Contact Information</h2>
-                    <p class="lead text-muted">You can also reach us through the following channels:</p>
-                    <ul class="list-unstyled">
-                        <li><i class="fas fa-map-marker-alt text-primary me-2"></i> **Address:** Ifo, Ogun State, Nigeria</li>
-                        <li><i class="fas fa-phone text-success me-2"></i> **Phone:** +2349060308234</li>
-                        <li><i class="fas fa-envelope text-warning me-2"></i> **Email:** alhamdulillahiacademy343@gmail.com</li>
-                        <li><i class="fas fa-clock text-info me-2"></i> **Office Hours:** 12hours</li>
-                    </ul>
-                    <div class="mt-4">
-                        <iframe src="[Google Maps Embed URL]" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="col-lg-6">
+                    <div class="contact-form-card p-4 shadow">
+                        <h3 class="text-center mb-4">Send Us a Message</h3>
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <select class="form-select" id="subject" required>
+                                    <option value="" selected disabled>Select Subject</option>
+                                    <option value="admissions">Admissions Inquiry</option>
+                                    <option value="general">General Information</option>
+                                    <option value="tour">Schedule a Tour</option>
+                                    <option value="feedback">Feedback/Suggestions</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Your Message</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>&copy; 2024 Al-hamdullahi Academy Secondary School. All Rights Reserved.</p>
-            <p>Located in Ifo, Ogun State, Nigeria.</p>
-            <div class="mt-2">
-                <a href="#" class="text-white me-3"><i class="fab fa-facebook-square fa-lg"></i></a>
-                <a href="#" class="text-white me-3"><i class="fab fa-twitter-square fa-lg"></i></a>
-                <a href="#" class="text-white"><i class="fab fa-instagram-square fa-lg"></i></a>
+    <!-- Map Section -->
+    <section class="map-section py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2>Our Location</h2>
+                <p class="lead">Visit our campus in person</p>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d-73.987654321!3d40.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDA3JzI0LjQiTiA3M8KwNTknMTMuNiJX!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Departments Section -->
+    <section class="departments-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2>Key Contacts</h2>
+                <p class="lead">Direct lines to our departments</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="department-card text-center p-4 h-100">
+                        <div class="department-icon mb-3">
+                            <i class="fas fa-user-graduate fa-3x text-primary"></i>
+                        </div>
+                        <h4>Admissions</h4>
+                        <p>For enrollment and application inquiries</p>
+                        <div class="department-contact">
+                            <p><i class="fas fa-phone-alt me-2"></i> +123 456 7891</p>
+                            <p><i class="fas fa-envelope me-2"></i> admissions@alhamdulillahacademy.edu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="department-card text-center p-4 h-100">
+                        <div class="department-icon mb-3">
+                            <i class="fas fa-book-open fa-3x text-primary"></i>
+                        </div>
+                        <h4>Academics</h4>
+                        <p>Curriculum and academic program questions</p>
+                        <div class="department-contact">
+                            <p><i class="fas fa-phone-alt me-2"></i> +123 456 7892</p>
+                            <p><i class="fas fa-envelope me-2"></i> academics@alhamdulillahacademy.edu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="department-card text-center p-4 h-100">
+                        <div class="department-icon mb-3">
+                            <i class="fas fa-quran fa-3x text-primary"></i>
+                        </div>
+                        <h4>Islamic Studies</h4>
+                        <p>Questions about our Islamic programs</p>
+                        <div class="department-contact">
+                            <p><i class="fas fa-phone-alt me-2"></i> +123 456 7893</p>
+                            <p><i class="fas fa-envelope me-2"></i> islamicstudies@alhamdulillahacademy.edu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="department-card text-center p-4 h-100">
+                        <div class="department-icon mb-3">
+                            <i class="fas fa-dollar-sign fa-3x text-primary"></i>
+                        </div>
+                        <h4>Finance</h4>
+                        <p>Tuition and financial aid inquiries</p>
+                        <div class="department-contact">
+                            <p><i class="fas fa-phone-alt me-2"></i> +123 456 7894</p>
+                            <p><i class="fas fa-envelope me-2"></i> finance@alhamdulillahacademy.edu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2>Frequently Asked Questions</h2>
+                <p class="lead">Common questions from parents</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    What are your school hours?
+                                </button>
+                            </h3>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Our regular school hours are from 7:30 AM to 3:30 PM, Monday through Friday. Students should arrive by 7:15 AM for morning assembly. Early drop-off and after-school care options are available for an additional fee.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    Do you provide transportation?
+                                </button>
+                            </h3>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We currently do not provide school buses, but many families organize carpooling. We can connect you with other families in your area to arrange transportation. Some local transportation services also offer routes to our school.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                    What is your student-to-teacher ratio?
+                                </button>
+                            </h3>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We maintain an average student-to-teacher ratio of 15:1 to ensure personalized attention for each student. In some specialized classes and Islamic studies, the ratio may be even smaller to facilitate better learning.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                    How do you incorporate Islamic values in daily activities?
+                                </button>
+                            </h3>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Islamic values are integrated throughout our curriculum and daily activities. Students begin the day with Quran recitation and dua, perform daily prayers together, learn Islamic etiquette, and study Islamic subjects. Our teachers model Islamic behavior and incorporate Islamic perspectives in all subjects.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                    What extracurricular activities do you offer?
+                                </button>
+                            </h3>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We offer a variety of extracurricular activities including Quran competition teams, Islamic arts, sports, science club, community service projects, and more. Activities vary by season and student interest, with new options added regularly based on student and parent feedback.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="contact.html" class="btn btn-primary">Have Another Question?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-about mb-4">
+                        <img src="images/logo-white.png" alt="Al Hamdulillah Academy" class="mb-3" height="60">
+                        <p>Providing quality Islamic education from KG to Secondary level since 2010.</p>
+                        
+                        <div class="footer-contact mt-4">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>123 Islamic Way, Muslim Town, Country</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>+123 456 7890</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>info@alhamdulillahacademy.edu</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="footer-title">Academics</h5>
+                    <ul class="footer-links">
+                        <li><a href="early-years.html">Early Years (KG & Nursery)</a></li>
+                        <li><a href="primary.html">Primary School (P1-P6)</a></li>
+                        <li><a href="secondary.html">Secondary (JSS1-SSS3)</a></li>
+                        <li><a href="quran-program.html">Quran Program</a></li>
+                        <li><a href="calendar.html">Academic Calendar</a></li>
+                        <li><a href="uniform.html">School Uniform</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="footer-title">Newsletter</h5>
+                    <p>Subscribe for school updates and announcements.</p>
+                    
+                    <form class="newsletter-form">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <h5 class="footer-title mt-4">Connect With Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 border-secondary">
+            
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2010-2024 Al Hamdulillah Academy. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-links small">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <span class="mx-2">|</span>
+                        <a href="terms.html">Terms of Service</a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top btn btn-primary rounded-circle shadow">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
 </body>
 </html>

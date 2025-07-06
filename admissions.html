@@ -3,119 +3,660 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admissions - Al-hamdulillahi Academy</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.0/css/all.min.css">
+    <title>Al Hamdulillah Academy - Islamic KG to Secondary School</title>
+    <meta name="description" content="Al Hamdulillah Academy provides quality Islamic education from KG to Secondary level with a balanced curriculum of academic and Islamic studies.">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo3.jpg" type="image/jpg">
 </head>
 <body>
+    <!-- Top Bar -->
+    <div class="top-bar bg-primary text-white py-2">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="top-bar-left text-center text-md-start mb-2 mb-md-0">
+                    <span class="d-block d-md-inline"><i class="fas fa-phone-alt me-2"></i> +123 456 7890</span>
+                    <span class="mx-3 d-none d-md-inline">|</span>
+                    <span class="d-block d-md-inline"><i class="fas fa-envelope me-2"></i> info@alhamdulillahacademy.edu</span>
+                </div>
+                <div class="top-bar-right">
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="text-white mx-2" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white mx-2" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white ms-2" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark shadow-sm fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/logo-white.png" alt="School Logo" height="30" class="d-inline-block align-top me-2">
-                Al-hamdulillahi Academy
+                <img src="images/logo2.png" alt="Al Hamdulillah Academy" height="70" class="me-2">
+               
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+            
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about.html">Our Academy</a></li>
+                            <li><a class="dropdown-item" href="mission.html">Mission & Vision</a></li>
+                            <li><a class="dropdown-item" href="staff.html">Our Staff</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button" data-bs-toggle="dropdown">
+                            Academics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="early-years.html">Early Years (KG & Nursery)</a></li>
+                            <li><a class="dropdown-item" href="primary.html">Primary School</a></li>
+                            <li><a class="dropdown-item" href="secondary.html">Secondary School</a></li>
+                            <li><a class="dropdown-item" href="quran-program.html">Quran Program</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
+                        <a class="nav-link" href="admissions.html">Admissions</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="academics.html">Academics</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="admissions.html">Admissions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="events.html">Events</a>
+                        <a class="nav-link" href="gallery.html">Gallery</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
+                
+                <div class="ms-lg-3 mt-3 mt-lg-0">
+                    <a href="admissions.html" class="btn btn-primary">
+                        <i class="fas fa-edit me-1"></i> Apply Now
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <section class="hero bg-light py-5 mt-5">
-        <div class="container">
-            <h1 class="display-4 fw-bold text-primary">Admissions at Al-hamdulillahi Academy</h1>
-            <p class="lead text-muted">Find all the information you need to apply to our school.</p>
-        </div>
-    </section>
-
-    <section class="py-5">
-        <div class="container">
-            <h2 class="mb-4">Admission Process</h2>
-            <p class="lead text-muted">Outline the steps involved in the admission process clearly and concisely.</p>
-            <ol class="list-group list-group-numbered">
-                <li class="list-group-item"><strong>Step 1: Inquiry and Application Form</strong> - Obtain the admission form from the school's administrative office or download it from our website.</li>
-                <li class="list-group-item"><strong>Step 2: Submission of Application</strong> - Complete the application form and submit it along with the required documents (e.g., birth certificate, previous academic records, passport photographs).</li>
-                <li class="list-group-item"><strong>Step 3: Entrance Examination</strong> - All applicants will be required to sit for an entrance examination covering core subjects.</li>
-                <li class="list-group-item"><strong>Step 4: Interview</strong> - Shortlisted candidates will be invited for an interview with the school's admission committee.</li>
-                <li class="list-group-item"><strong>Step 5: Admission Offer</strong> - Successful candidates will receive an admission offer letter.</li>
-                <li class="list-group-item"><strong>Step 6: Acceptance and Enrollment</strong> - Accept the offer and complete the enrollment process by paying the necessary fees and submitting any remaining documents.</li>
-            </ol>
-        </div>
-    </section>
-
-    <section class="bg-light py-5">
-        <div class="container">
-            <h2 class="mb-4 text-primary">Required Documents</h2>
-            <p class="lead text-muted">List all the documents that need to be submitted along with the application form.</p>
-            <ul class="list-unstyled">
-                <li><i class="fas fa-file-alt text-success me-2"></i> Completed Admission Form</li>
-                <li><i class="fas fa-id-card text-success me-2"></i> Original Birth Certificate</li>
-                <li><i class="fas fa-file-pdf text-success me-2"></i> Photocopy of Previous Academic Records/Transcripts</li>
-                <li><i class="fas fa-user-circle text-success me-2"></i> Two Recent Passport Photographs</li>
-                <li><i class="fas fa-envelope text-success me-2"></i> Letter of Recommendation (if applicable)</li>
-                <li><i class="fas fa-receipt text-success me-2"></i> Payment Receipt for Application Fee</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="py-5">
-        <div class="container">
-            <h2 class="mb-4">Admission Criteria</h2>
-            <p class="lead text-muted">Outline the criteria used for evaluating applicants.</p>
-            <ul>
-                <li>Performance in the Entrance Examination</li>
-                <li>Performance in the Interview</li>
-                <li>Review of Previous Academic Records</li>
-                <li>Age Appropriateness for the Grade Level</li>
-                </ul>
-        </div>
-    </section>
-
-    <section class="bg-primary text-white py-5">
+    <!-- Page Header -->
+    <section class="page-header py-5 bg-primary text-white">
         <div class="container text-center">
-            <h2 class="mb-3">Ready to Apply?</h2>
-            <p class="lead">Apply Now or contact our admissions office for more information.</p>
-            <a href="apply.html" class="btn btn-light btn-lg me-3">Apply Now</a>
-            <a href="contact.html" class="btn btn-outline-light btn-lg">Contact Admissions Office</a>
+            <h1 class="display-4">Admissions</h1>
+            <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">Admissions</li>
+                </ol>
+            </nav>
         </div>
     </section>
 
-    <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>&copy; 2024 Al-hamdulillahi Academy. All Rights Reserved.</p>
-            <p>Located in Ifo, Ogun State, Nigeria.</p>
-            <div class="mt-2">
-                <a href="#" class="text-white me-3"><i class="fab fa-facebook-square fa-lg"></i></a>
-                <a href="#" class="text-white me-3"><i class="fab fa-twitter-square fa-lg"></i></a>
-                <a href="#" class="text-white"><i class="fab fa-instagram-square fa-lg"></i></a>
+    <!-- Admissions Process -->
+    <section class="admissions-process py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2>Admission Process</h2>
+                <p class="lead">How to enroll your child at Al Hamdulillah Academy</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step text-center p-4">
+                        <div class="step-number bg-primary text-white rounded-circle mx-auto mb-3">1</div>
+                        <h4>Inquiry</h4>
+                        <p>Submit an inquiry form or contact our admissions office to learn more about our programs.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step text-center p-4">
+                        <div class="step-number bg-primary text-white rounded-circle mx-auto mb-3">2</div>
+                        <h4>School Tour</h4>
+                        <p>Schedule a visit to tour our facilities and meet with our staff.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step text-center p-4">
+                        <div class="step-number bg-primary text-white rounded-circle mx-auto mb-3">3</div>
+                        <h4>Application</h4>
+                        <p>Complete the online application form and submit required documents.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step text-center p-4">
+                        <div class="step-number bg-primary text-white rounded-circle mx-auto mb-3">4</div>
+                        <h4>Assessment</h4>
+                        <p>Student assessment and family interview with administration.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step text-center p-4">
+                        <div class="step-number bg-primary text-white rounded-circle mx-auto mb-3">5</div>
+                        <h4>Acceptance</h4>
+                        <p>Receive admission decision and enrollment package.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step text-center p-4">
+                        <div class="step-number bg-primary text-white rounded-circle mx-auto mb-3">6</div>
+                        <h4>Registration</h4>
+                        <p>Complete registration forms and submit tuition deposit.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step text-center p-4">
+                        <div class="step-number bg-primary text-white rounded-circle mx-auto mb-3">7</div>
+                        <h4>Orientation</h4>
+                        <p>Attend new student and parent orientation session.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step text-center p-4">
+                        <div class="step-number bg-primary text-white rounded-circle mx-auto mb-3">8</div>
+                        <h4>First Day</h4>
+                        <p>Begin your journey at Al Hamdulillah Academy!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements Section -->
+    <section class="requirements-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-4">Admission Requirements</h2>
+                    <p class="lead">What you need to prepare for application</p>
+                    <div class="requirements-list">
+                        <div class="requirement-item mb-4">
+                            <div class="d-flex">
+                                <div class="requirement-icon me-3">
+                                    <i class="fas fa-file-alt fa-2x text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5>Completed Application Form</h5>
+                                    <p>All sections must be filled out completely and signed by parents/guardians.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="requirement-item mb-4">
+                            <div class="d-flex">
+                                <div class="requirement-icon me-3">
+                                    <i class="fas fa-birthday-cake fa-2x text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5>Birth Certificate</h5>
+                                    <p>Official copy showing child's date of birth.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="requirement-item mb-4">
+                            <div class="d-flex">
+                                <div class="requirement-icon me-3">
+                                    <i class="fas fa-heartbeat fa-2x text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5>Medical Records</h5>
+                                    <p>Immunization records and recent physical examination.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="requirement-item mb-4">
+                            <div class="d-flex">
+                                <div class="requirement-icon me-3">
+                                    <i class="fas fa-school fa-2x text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5>Academic Records</h5>
+                                    <p>Report cards and transcripts from previous schools (if applicable).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="requirement-item">
+                            <div class="d-flex">
+                                <div class="requirement-icon me-3">
+                                    <i class="fas fa-camera fa-2x text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5>Passport Photos</h5>
+                                    <p>Two recent passport-sized photographs of the student.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="admission-faq">
+                        <h2 class="section-title mb-4">Frequently Asked Questions</h2>
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                        What is the age requirement for Kindergarten?
+                                    </button>
+                                </h3>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Children must be 5 years old by September 1st of the academic year to enroll in Kindergarten. We do not make exceptions to this policy.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                        Is there an application fee?
+                                    </button>
+                                </h3>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes, there is a non-refundable application fee of $50 for each student. This fee covers the processing of your application and assessment administration.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                        What is the student assessment like?
+                                    </button>
+                                </h3>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        The assessment varies by grade level but generally evaluates basic academic skills appropriate for the grade. For younger students, it focuses on readiness skills, while older students are assessed in core subjects. The assessment helps us determine proper placement and support needs.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                        Do you accept students during the school year?
+                                    </button>
+                                </h3>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes, we accept mid-year transfers if space is available in the desired grade. The admission process is the same, and we work closely with transferring students to help them adjust to our curriculum and environment.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                        Is financial aid available?
+                                    </button>
+                                </h3>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Limited financial aid is available for families who demonstrate need. You must complete a separate financial aid application and provide supporting documentation. Awards are made based on available funds and family circumstances.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tuition Section -->
+    <section class="tuition-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2>Tuition & Fees</h2>
+                <p class="lead">Affordable Islamic education for your family</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="tuition-card text-center p-4">
+                        <h4>Kindergarten</h4>
+                        <div class="tuition-amount my-3">
+                            <span class="d-block">$4,800</span>
+                            <small class="text-muted">per year</small>
+                        </div>
+                        <ul class="tuition-features list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Full-day program</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Quran & Arabic basics</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Islamic environment</li>
+                            <li><i class="fas fa-check text-primary me-2"></i> Academic foundation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="tuition-card text-center p-4">
+                        <h4>Primary School</h4>
+                        <div class="tuition-amount my-3">
+                            <span class="d-block">$5,200</span>
+                            <small class="text-muted">per year</small>
+                        </div>
+                        <ul class="tuition-features list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Grades 1-5</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Quran memorization</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Full curriculum</li>
+                            <li><i class="fas fa-check text-primary me-2"></i> Islamic studies</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="tuition-card text-center p-4">
+                        <h4>Middle School</h4>
+                        <div class="tuition-amount my-3">
+                            <span class="d-block">$5,600</span>
+                            <small class="text-muted">per year</small>
+                        </div>
+                        <ul class="tuition-features list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Grades 6-8</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Advanced studies</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Science labs</li>
+                            <li><i class="fas fa-check text-primary me-2"></i> Islamic leadership</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="tuition-card text-center p-4">
+                        <h4>High School</h4>
+                        <div class="tuition-amount my-3">
+                            <span class="d-block">$6,000</span>
+                            <small class="text-muted">per year</small>
+                        </div>
+                        <ul class="tuition-features list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Grades 9-12</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> College prep</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Advanced Islamic studies</li>
+                            <li><i class="fas fa-check text-primary me-2"></i> Career guidance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tuition-notes mt-5">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="notes-card p-4 bg-light">
+                            <h5 class="text-center mb-3">Additional Information</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-info-circle text-primary me-2"></i> <strong>Sibling Discount:</strong> 10% discount for second child, 15% for third child, and 20% for fourth child and beyond.</li>
+                                <li class="mb-2"><i class="fas fa-info-circle text-primary me-2"></i> <strong>Payment Plans:</strong> Monthly, quarterly, and semester payment options available.</li>
+                                <li class="mb-2"><i class="fas fa-info-circle text-primary me-2"></i> <strong>Registration Fee:</strong> $200 per student (non-refundable, due upon acceptance).</li>
+                                <li><i class="fas fa-info-circle text-primary me-2"></i> <strong>Books & Uniforms:</strong> Additional costs apply (approximately $300-$500 per year).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="application-section py-5 bg-primary text-white" id="apply">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2>Application Form</h2>
+                <p class="lead">Begin your child's journey at Al Hamdulillah Academy</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form class="application-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="firstName" class="form-label">Student First Name</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastName" class="form-label">Student Last Name</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="birthDate" class="form-label">Date of Birth</label>
+                                <input type="date" class="form-control" id="birthDate" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="grade" class="form-label">Grade Applying For</label>
+                                <select class="form-select" id="grade" required>
+                                    <option value="" selected disabled>Select Grade</option>
+                                    <option value="kg">Kindergarten</option>
+                                    <option value="1">Grade 1</option>
+                                    <option value="2">Grade 2</option>
+                                    <option value="3">Grade 3</option>
+                                    <option value="4">Grade 4</option>
+                                    <option value="5">Grade 5</option>
+                                    <option value="6">Grade 6</option>
+                                    <option value="7">Grade 7</option>
+                                    <option value="8">Grade 8</option>
+                                    <option value="9">Grade 9</option>
+                                    <option value="10">Grade 10</option>
+                                    <option value="11">Grade 11</option>
+                                    <option value="12">Grade 12</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="parentName" class="form-label">Parent/Guardian Name</label>
+                                <input type="text" class="form-control" id="parentName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="parentEmail" class="form-label">Parent/Guardian Email</label>
+                                <input type="email" class="form-control" id="parentEmail" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="parentPhone" class="form-label">Parent/Guardian Phone</label>
+                                <input type="tel" class="form-control" id="parentPhone" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="currentSchool" class="form-label">Current School (if applicable)</label>
+                                <input type="text" class="form-control" id="currentSchool">
+                            </div>
+                            <div class="col-12">
+                                <label for="comments" class="form-label">Additional Comments</label>
+                                <textarea class="form-control" id="comments" rows="3"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                                    <label class="form-check-label" for="agreeTerms">
+                                        I agree to the <a href="#" class="text-white">terms and conditions</a> and understand there is a $50 non-refundable application fee.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center mt-4">
+                                <button type="submit" class="btn btn-light btn-lg">Submit Application</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Admissions -->
+    <section class="contact-admissions py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-4">Contact Admissions</h2>
+                    <p class="lead">We're here to help with your questions</p>
+                    <p>Our admissions team is available to answer your questions about our programs, schedule a school tour, or guide you through the application process.</p>
+                    <div class="contact-info mt-4">
+                        <div class="info-item mb-3">
+                            <div class="d-flex align-items-center">
+                                <div class="info-icon me-3">
+                                    <i class="fas fa-phone-alt fa-2x text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Phone</h5>
+                                    <p class="mb-0">+123 456 7890</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-item mb-3">
+                            <div class="d-flex align-items-center">
+                                <div class="info-icon me-3">
+                                    <i class="fas fa-envelope fa-2x text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Email</h5>
+                                    <p class="mb-0">admissions@alhamdulillahacademy.edu</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="d-flex align-items-center">
+                                <div class="info-icon me-3">
+                                    <i class="fas fa-clock fa-2x text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Office Hours</h5>
+                                    <p class="mb-0">Monday-Friday: 8:00 AM - 4:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="tour-card p-4 bg-light">
+                        <h4 class="text-center mb-4">Schedule a School Tour</h4>
+                        <form class="tour-form">
+                            <div class="mb-3">
+                                <label for="tourName" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="tourName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="tourEmail" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="tourEmail" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="tourPhone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="tourPhone" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="tourDate" class="form-label">Preferred Tour Date</label>
+                                <input type="date" class="form-control" id="tourDate" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="tourMessage" class="form-label">Additional Notes</label>
+                                <textarea class="form-control" id="tourMessage" rows="3"></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Request Tour</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-about mb-4">
+                        <img src="images/logo-white.png" alt="Al Hamdulillah Academy" class="mb-3" height="60">
+                        <p>Providing quality Islamic education from KG to Secondary level since 2010.</p>
+                        
+                        <div class="footer-contact mt-4">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>123 Islamic Way, Muslim Town, Country</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>+123 456 7890</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>info@alhamdulillahacademy.edu</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="footer-title">Academics</h5>
+                    <ul class="footer-links">
+                        <li><a href="early-years.html">Early Years (KG & Nursery)</a></li>
+                        <li><a href="primary.html">Primary School (P1-P6)</a></li>
+                        <li><a href="secondary.html">Secondary (JSS1-SSS3)</a></li>
+                        <li><a href="quran-program.html">Quran Program</a></li>
+                        <li><a href="calendar.html">Academic Calendar</a></li>
+                        <li><a href="uniform.html">School Uniform</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="footer-title">Newsletter</h5>
+                    <p>Subscribe for school updates and announcements.</p>
+                    
+                    <form class="newsletter-form">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <h5 class="footer-title mt-4">Connect With Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 border-secondary">
+            
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2010-2024 Al Hamdulillah Academy. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-links small">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <span class="mx-2">|</span>
+                        <a href="terms.html">Terms of Service</a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top btn btn-primary rounded-circle shadow">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
 </body>
 </html>

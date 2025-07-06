@@ -3,20 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academics - Al-hamdulillahi Academy</title>
+    <title>Academics - Al Hamdulillah Academy</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png">
 </head>
 <body>
+    <!-- Top Bar -->
+    <div class="top-bar bg-primary text-white py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="top-bar-left">
+                <span><i class="fas fa-phone-alt me-2"></i> +123 456 7890</span>
+                <span class="ms-3"><i class="fas fa-envelope me-2"></i> info@alhamdulillahacademy.edu</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
 
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark shadow-sm fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/logo-white.png" alt="School Logo" height="30" class="d-inline-block align-top me-2">
-                Al-hamdulillahi Academy
+                <img src="images/logo.png" alt="Al Hamdulillah Academy" height="60">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -34,172 +54,537 @@
                         <a class="nav-link" href="admissions.html">Admissions</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="events.html">Events</a>
+                        <a class="nav-link" href="gallery.html">Gallery</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
+                <a href="admissions.html" class="btn btn-primary ms-lg-3">Apply Now</a>
             </div>
         </div>
     </nav>
 
-    <section class="hero bg-light py-5 mt-5">
-        <div class="container">
-            <h1 class="display-4 fw-bold text-primary">Academics at Al-hamdulillahi Academy</h1>
-            <p class="lead text-muted">Explore our curriculum, teaching methodologies, and extracurricular activities.</p>
-        </div>
-    </section>
-
-    <section class="py-5">
-        <div class="container">
-            <h2 class="mb-4">Our Curriculum</h2>
-            <p class="lead text-muted">Provide a detailed overview of the curriculum followed by the school. Mention the educational standards (e.g., Nigerian National Curriculum) and any unique aspects of your approach.</p>
-            <div class="row mt-4">
-                <div class="col-md-6">
-                    <h4 class="text-primary">Core Subjects</h4>
-                    <ul class="list-unstyled">
-                        <li><i class="fas fa-book-open text-success me-2"></i> Mathematics</li>
-                        <li><i class="fas fa-book-open text-success me-2"></i> English Language</li>
-                        <li><i class="fas fa-book-open text-success me-2"></i> Basic Science</li>
-                        <li><i class="fas fa-book-open text-success me-2"></i> Basic Technology</li>
-                        <li><i class="fas fa-book-open text-success me-2"></i> Social Studies</li>
-                        </ul>
-                </div>
-                <div class="col-md-6">
-                    <h4 class="text-success">Elective Subjects</h4>
-                    <p class="text-muted">List the elective subjects offered to students, allowing them to explore their interests.</p>
-                    <ul class="list-unstyled">
-                        <li><i class="fas fa-lightbulb text-warning me-2"></i> Physics</li>
-                        <li><i class="fas fa-flask text-warning me-2"></i> Chemistry</li>
-                        <li><i class="fas fa-leaf text-warning me-2"></i> Biology</li>
-                        <li><i class="fas fa-code text-warning me-2"></i> Computer Science</li>
-                        <li><i class="fas fa-palette text-warning me-2"></i> Fine Arts</li>
-                        </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-light py-5">
-        <div class="container">
-            <h2 class="mb-4">Teaching and Learning</h2>
-            <p class="lead text-muted">The teaching methodologies and learning environment at Al-hamdulillahi Academy. Highlight any innovative practices or technologies used in the classroom.</p>
-            <p class="text-muted">At Al-hamdulillahi Academy, we believe in a student-centered approach to education. Our teaching methodologies are designed to foster critical thinking, creativity, and collaboration among students. We utilize a blend of traditional and modern teaching techniques, including project-based learning, interactive discussions, and technology integration.</p>
-            <p class="text-muted">Our dedicated faculty members are committed to providing personalized attention to each student, ensuring that they receive the support they need to excel academically and personally. We encourage active participation in the learning process, allowing students to take ownership of their education.</p>
-            <p class="text-muted">In addition to our rigorous academic curriculum, we offer a variety of extracurricular activities that promote holistic development. From sports and arts to clubs and community service, students have ample opportunities to explore their interests and develop essential life skills.</p>
-            <p class="text-muted">We also prioritize the use of technology in education, equipping our classrooms with modern tools and resources to enhance the learning experience. Our students have access to digital learning platforms, interactive whiteboards, and online resources that complement their studies.</p>
-        </div>
-    </section>
-
-    <section class="bg-light py-5">
-        <div class="container">
-            <h2 class="mb-4 text-center">Modern Facilities</h2>
-            <p class="lead text-muted text-center">At Al-hamdulillahi Academy, we provide state-of-the-art facilities to support effective teaching and learning.</p>
-            <div class="row mt-4">
-                <div class="col-md-4 text-center mb-4">
-                    <i class="fas fa-chalkboard fa-3x text-primary mb-3"></i>
-                    <h5 class="fw-bold">Well-Equipped Classrooms</h5>
-                    <p class="text-muted">Our classrooms are spacious, well-lit, and equipped with modern teaching aids, including projectors and smart boards.</p>
-                </div>
-                <div class="col-md-4 text-center mb-4">
-                    <i class="fas fa-flask fa-3x text-success mb-3"></i>
-                    <h5 class="fw-bold">Advanced Laboratories</h5>
-                    <p class="text-muted">We have fully equipped science laboratories for Physics, Chemistry, and Biology, fostering hands-on learning experiences.</p>
-                </div>
-                <div class="col-md-4 text-center mb-4">
-                    <i class="fas fa-book fa-3x text-warning mb-3"></i>
-                    <h5 class="fw-bold">Comprehensive Library</h5>
-                    <p class="text-muted">Our library houses a vast collection of books, journals, and digital resources to support academic excellence.</p>
-                </div>
-                <div class="col-md-12 text-center mb-4">
-                    <i class="fas fa-lightbulb fa-3x text-warning mb-3"></i>
-                    <h5 class="fw-bold">Interactive Learning</h5>
-                    <p class="text-muted">
-                        At Al-hamdulillahi Academy, we foster an interactive learning environment where students are encouraged to actively participate in discussions, group projects, and problem-solving activities. 
-                        Our teachers use inquiry-based learning techniques to stimulate curiosity and critical thinking, enabling students to analyze, evaluate, and create solutions to real-world challenges.
-                    </p>
-                    <p class="text-muted">
-                        We also integrate technology, such as interactive whiteboards and online collaboration tools, to make learning engaging and dynamic. Students are given opportunities to present their ideas, debate topics, and work collaboratively, preparing them for leadership roles in the future.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-light py-5">
-        <div class="container">
-            <h2 class="mb-4 text-center">Our Dedicated Teaching Staff</h2>
-            <p class="lead text-muted text-center">Meet our highly qualified and experienced educators who are committed to nurturing young minds and fostering academic excellence.</p>
-            <div class="row mt-4">
-                <div class="col-md-4 text-center mb-4">
-                    <img src="assets/teacher1.jpg" alt="Teacher 1" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px;">
-                    <h5 class="fw-bold">Mr. Hussain</h5>
-                    <p class="text-muted">M.Sc. in Mathematics Education, 15+ years of teaching experience.</p>
-                </div>
-                <div class="col-md-4 text-center mb-4">
-                    <img src="assets/teacher2.jpg" alt="Teacher 2" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px;">
-                    <h5 class="fw-bold">Mrs. Hamzat</h5>
-                    <p class="text-muted">B.Ed. in English Language, 10+ years of experience in language instruction.</p>
-                </div>
-                <div class="col-md-4 text-center mb-4">
-                    <img src="assets/teacher3.jpg" alt="Teacher 3" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px;">
-                    <h5 class="fw-bold">Dr. Abdulrahman</h5>
-                    <p class="text-muted">Ph.D. in Biology, 20+ years of experience in science education and research.</p>
-                </div>
-            </div>
-            <div class="text-center mt-4">
-                <a href="about.html" class="btn btn-outline-primary">Learn More About Our Staff</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-5">
-        <div class="container">
-            <h2 class="mb-4">Extracurricular Activities</h2>
-            <p class="lead text-muted">Showcase the various extracurricular activities and clubs offered to students for their holistic development.</p>
-            <div class="row">
-                <div class="col-md-4 mb-3">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary"><i class="fas fa-futbol me-2"></i> Sports Clubs</h5>
-                            <p class="card-text text-muted">Football, Basketball, Volleyball, Athletics, etc.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title text-success"><i class="fas fa-book me-2"></i> Academic Clubs</h5>
-                            <p class="card-text text-muted">Debate Club, Science Club, Literary and Debating Society, etc.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title text-warning"><i class="fas fa-music me-2"></i> Arts and Culture</h5>
-                            <p class="card-text text-muted">Music Club, Drama Club, Art Club, Cultural Dance Group, etc.</p>
-                        </div>
-                    </div>
-                </div>
-                </div>
-        </div>
-    </section>
-
-    <footer class="bg-dark text-white py-4">
+    <!-- Page Header -->
+    <section class="page-header py-5 bg-primary text-white">
         <div class="container text-center">
-            <p>&copy; 2024 Al-hamdulillahi Academy. All Rights Reserved.</p>
-            <p>Located in Ifo, Ogun State, Nigeria.</p>
-            <div class="mt-2">
-                <a href="#" class="text-white me-3"><i class="fab fa-facebook-square fa-lg"></i></a>
-                <a href="#" class="text-white me-3"><i class="fab fa-twitter-square fa-lg"></i></a>
-                <a href="#" class="text-white"><i class="fab fa-instagram-square fa-lg"></i></a>
+            <h1 class="display-4">Our Academics</h1>
+            <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">Academics</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Academics Overview -->
+    <section class="academics-overview py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-4">Comprehensive Islamic & Academic Education</h2>
+                    <p class="lead">At Al Hamdulillah Academy, we provide a balanced curriculum that combines national educational standards with comprehensive Islamic studies.</p>
+                    <p>Our academic program is designed to develop critical thinking, creativity, and problem-solving skills while instilling strong Islamic values and character. We follow the national curriculum enhanced with Islamic perspectives across all subjects.</p>
+                    <p>The Islamic studies program includes Quran memorization (Hifz), Arabic language, Islamic history, Aqeedah, Fiqh, and Seerah of the Prophet Muhammad (PBUH). Our students also participate in daily prayers and weekly Islamic activities.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/academics-overview.jpg" alt="Academics Overview" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs-section py-5 bg-light" id="primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="program-sidebar">
+                        <div class="sidebar-header mb-4">
+                            <h3>Our Programs</h3>
+                        </div>
+                        <div class="nav flex-column nav-pills" id="program-tab" role="tablist">
+                            <button class="nav-link active" id="primary-tab" data-bs-toggle="pill" data-bs-target="#primary-content" type="button">Primary School</button>
+                            <button class="nav-link" id="middle-tab" data-bs-toggle="pill" data-bs-target="#middle-content" type="button">Middle School</button>
+                            <button class="nav-link" id="secondary-tab" data-bs-toggle="pill" data-bs-target="#secondary-content" type="button">Secondary School</button>
+                            <button class="nav-link" id="hifz-tab" data-bs-toggle="pill" data-bs-target="#hifz-content" type="button">Hifz Program</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="tab-content" id="program-tabContent">
+                        <div class="tab-pane fade show active" id="primary-content" role="tabpanel">
+                            <h3 class="mb-4">Primary School (Grades 1-5)</h3>
+                            <p>Our primary school program provides a strong foundation in both Islamic and secular education. The curriculum is designed to nurture young minds in a loving Islamic environment.</p>
+                            
+                            <h5 class="mt-4">Core Subjects:</h5>
+                            <ul class="subject-list">
+                                <li><i class="fas fa-book-open text-primary me-2"></i> English Language Arts</li>
+                                <li><i class="fas fa-calculator text-primary me-2"></i> Mathematics</li>
+                                <li><i class="fas fa-flask text-primary me-2"></i> Science</li>
+                                <li><i class="fas fa-globe-americas text-primary me-2"></i> Social Studies</li>
+                                <li><i class="fas fa-quran text-primary me-2"></i> Quran Studies (Recitation & Memorization)</li>
+                                <li><i class="fas fa-mosque text-primary me-2"></i> Islamic Studies (Aqeedah, Fiqh, Seerah)</li>
+                                <li><i class="fas fa-language text-primary me-2"></i> Arabic Language</li>
+                            </ul>
+                            
+                            <h5 class="mt-4">Special Programs:</h5>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="special-program-card p-3">
+                                        <h6><i class="fas fa-book-reader text-primary me-2"></i> Reading Program</h6>
+                                        <p>Develops strong reading skills with Islamic literature and classics.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="special-program-card p-3">
+                                        <h6><i class="fas fa-pray text-primary me-2"></i> Salah Practice</h6>
+                                        <p>Daily prayer practice and Islamic etiquette training.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="special-program-card p-3">
+                                        <h6><i class="fas fa-music text-primary me-2"></i> Nasheed & Islamic Arts</h6>
+                                        <p>Creative expression through Islamic songs and art projects.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="special-program-card p-3">
+                                        <h6><i class="fas fa-running text-primary me-2"></i> Physical Education</h6>
+                                        <p>Age-appropriate physical activities with Islamic guidelines.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-pane fade" id="middle-content" role="tabpanel">
+                            <h3 class="mb-4">Middle School (Grades 6-8)</h3>
+                            <p>Our middle school program builds on the foundation of primary school with more advanced academic and Islamic studies, preparing students for the challenges of secondary education.</p>
+                            
+                            <h5 class="mt-4">Core Subjects:</h5>
+                            <ul class="subject-list">
+                                <li><i class="fas fa-book-open text-primary me-2"></i> English Language Arts</li>
+                                <li><i class="fas fa-calculator text-primary me-2"></i> Mathematics (Pre-Algebra, Algebra)</li>
+                                <li><i class="fas fa-flask text-primary me-2"></i> Science (Life Science, Physical Science)</li>
+                                <li><i class="fas fa-globe-americas text-primary me-2"></i> Social Studies (World History, Geography)</li>
+                                <li><i class="fas fa-quran text-primary me-2"></i> Quran Studies (Memorization & Tafseer)</li>
+                                <li><i class="fas fa-mosque text-primary me-2"></i> Islamic Studies (Aqeedah, Fiqh, Hadith)</li>
+                                <li><i class="fas fa-language text-primary me-2"></i> Arabic Language (Reading & Writing)</li>
+                            </ul>
+                            
+                            <h5 class="mt-4">Special Programs:</h5>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="special-program-card p-3">
+                                        <h6><i class="fas fa-laptop-code text-primary me-2"></i> Technology Education</h6>
+                                        <p>Introduction to computer science and digital literacy.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="special-program-card p-3">
+                                        <h6><i class="fas fa-microscope text-primary me-2"></i> Science Lab</h6>
+                                        <p>Hands-on experiments in our fully equipped lab.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="special-program-card p-3">
+                                        <h6><i class="fas fa-hands-helping text-primary me-2"></i> Community Service</h6>
+                                        <p>Developing social responsibility through service projects.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="special-program-card p-3">
+                                        <h6><i class="fas fa-user-shield text-primary me-2"></i> Islamic Character Development</h6>
+                                        <p>Programs focusing on building strong Islamic identity.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-pane fade" id="secondary-content" role="tabpanel">
+                            <h3 class="mb-4">Secondary School (Grades 9-12)</h3>
+                            <p>Our secondary school program prepares students for higher education and life as practicing Muslims with a rigorous academic curriculum and advanced Islamic studies.</p>
+                            
+                            <h5 class="mt-4">Core Subjects:</h5>
+                            <ul class="subject-list">
+                                <li><i class="fas fa-book-open text-primary me-2"></i> English Literature & Composition</li>
+                                <li><i class="fas fa-calculator text-primary me-2"></i> Mathematics (Algebra, Geometry, Calculus)</li>
+                                <li><i class="fas fa-flask text-primary me-2"></i> Science (Biology, Chemistry, Physics)</li>
+                                <li><i class="fas fa-globe-americas text-primary me-2"></i> Social Studies (History, Government, Economics)</li>
+                                <li><i class="fas fa-quran text-primary me-2"></i> Advanced Quranic Studies (Tafseer, Tajweed)</li>
+                                <li><i class="fas fa-mosque text-primary me-2"></i> Advanced Islamic Studies (Fiqh, Usul, Hadith)</li>
+                                <li><i class="fas fa-language text-primary me-2"></i> Advanced Arabic (Grammar, Literature)</li>
+                            </ul>
+                            
+                            <h5 class="mt-4">Electives & Advanced Programs:</h5>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="special-program-card p-3">
+                                        <h6><i class="fas fa-laptop text-primary me-2"></i> Computer Science</h6>
+                                        <p>Programming, web development, and computer applications.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="special-program-card p-3">
+                                        <h6><i class="fas fa-briefcase-medical text-primary me-2"></i> Health Sciences</h6>
+                                        <p>Introduction to medical fields with Islamic bioethics.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="special-program-card p-3">
+                                        <h6><i class="fas fa-graduation-cap text-primary me-2"></i> College Prep</h6>
+                                        <p>SAT/ACT preparation and college application guidance.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="special-program-card p-3">
+                                        <h6><i class="fas fa-user-tie text-primary me-2"></i> Career Exploration</h6>
+                                        <p>Islamic perspective on various career paths.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-pane fade" id="hifz-content" role="tabpanel">
+                            <h3 class="mb-4">Hifz Program</h3>
+                            <p>Our Hifz program is designed for students who wish to memorize the entire Quran while continuing their academic education. This rigorous program requires dedication and commitment from both students and parents.</p>
+                            
+                            <h5 class="mt-4">Program Structure:</h5>
+                            <ul class="subject-list">
+                                <li><i class="fas fa-clock text-primary me-2"></i> Daily memorization sessions with qualified Huffaz</li>
+                                <li><i class="fas fa-repeat text-primary me-2"></i> Regular revision schedule to retain memorized portions</li>
+                                <li><i class="fas fa-book text-primary me-2"></i> Tajweed and proper recitation training</li>
+                                <li><i class="fas fa-brain text-primary me-2"></i> Understanding of memorized verses (short Tafseer)</li>
+                                <li><i class="fas fa-user-graduate text-primary me-2"></i> Continued academic studies at modified pace</li>
+                            </ul>
+                            
+                            <h5 class="mt-4">Admission Requirements:</h5>
+                            <div class="requirements-list">
+                                <div class="requirement-item mb-3">
+                                    <h6><i class="fas fa-check-circle text-primary me-2"></i> Strong Memorization Ability</h6>
+                                    <p>Demonstrated capacity for memorization and retention.</p>
+                                </div>
+                                <div class="requirement-item mb-3">
+                                    <h6><i class="fas fa-check-circle text-primary me-2"></i> Good Quranic Recitation</h6>
+                                    <p>Ability to recite Quran with basic Tajweed rules.</p>
+                                </div>
+                                <div class="requirement-item mb-3">
+                                    <h6><i class="fas fa-check-circle text-primary me-2"></i> Parental Commitment</h6>
+                                    <p>Parents must support the rigorous schedule and home revision.</p>
+                                </div>
+                                <div class="requirement-item">
+                                    <h6><i class="fas fa-check-circle text-primary me-2"></i> Interview & Assessment</h6>
+                                    <p>Evaluation by our Hifz committee for suitability.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4">
+                                <a href="admissions.html" class="btn btn-primary">Apply for Hifz Program</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Schedule Section -->
+    <section class="schedule-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2>Daily Schedule</h2>
+                <p class="lead">A typical day at Al Hamdulillah Academy</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="schedule-timeline">
+                        <div class="schedule-item">
+                            <div class="schedule-time">7:30 AM - 8:00 AM</div>
+                            <div class="schedule-content">
+                                <h5>Morning Assembly</h5>
+                                <p>Dua, Quran recitation, announcements, and nasheed.</p>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">8:00 AM - 10:00 AM</div>
+                            <div class="schedule-content">
+                                <h5>Academic Classes</h5>
+                                <p>English, Mathematics, and Science subjects.</p>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">10:00 AM - 10:30 AM</div>
+                            <div class="schedule-content">
+                                <h5>Break & Snack Time</h5>
+                                <p>Supervised break with healthy snacks.</p>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">10:30 AM - 12:00 PM</div>
+                            <div class="schedule-content">
+                                <h5>Islamic Studies</h5>
+                                <p>Quran, Arabic, and Islamic subjects.</p>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">12:00 PM - 12:30 PM</div>
+                            <div class="schedule-content">
+                                <h5>Dhuhr Prayer</h5>
+                                <p>Congregational prayer in school masjid.</p>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">12:30 PM - 1:30 PM</div>
+                            <div class="schedule-content">
+                                <h5>Lunch & Recreation</h5>
+                                <p>Lunch break with supervised playtime.</p>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">1:30 PM - 3:30 PM</div>
+                            <div class="schedule-content">
+                                <h5>Afternoon Classes</h5>
+                                <p>Social studies, electives, and special programs.</p>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">3:30 PM</div>
+                            <div class="schedule-content">
+                                <h5>Dismissal</h5>
+                                <p>Asr prayer before departure for older students.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Calendar -->
+    <section class="calendar-section py-5">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2 class="text-primary">Academic Calendar 2023-2024</h2>
+            <p class="lead text-muted">Important dates and holidays</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="calendar-timeline">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            <span class="date-day">15</span>
+                            <span class="date-month">Aug</span>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-card">
+                                <h5 class="mb-2">First Day of School</h5>
+                                <p class="text-muted mb-0">Academic year begins for all students</p>
+                                <div class="timeline-icon">
+                                    <i class="fas fa-school"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            <span class="date-day">12</span>
+                            <span class="date-month">Sep</span>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-card">
+                                <h5 class="mb-2">Islamic New Year</h5>
+                                <p class="text-muted mb-0">School closed for Islamic New Year 1445 AH</p>
+                                <div class="timeline-icon">
+                                    <i class="fas fa-moon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            <span class="date-day">15-19</span>
+                            <span class="date-month">Oct</span>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-card">
+                                <h5 class="mb-2">Mid-Term Break</h5>
+                                <p class="text-muted mb-0">School closed for mid-term vacation</p>
+                                <div class="timeline-icon">
+                                    <i class="fas fa-umbrella-beach"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            <span class="date-day">25</span>
+                            <span class="date-month">Nov</span>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-card">
+                                <h5 class="mb-2">Parent-Teacher Conferences</h5>
+                                <p class="text-muted mb-0">No regular classes. Meetings by appointment</p>
+                                <div class="timeline-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 5 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            <span class="date-day">20</span>
+                            <span class="date-month">Dec</span>
+                            <span class="date-day">-5</span>
+                            <span class="date-month">Jan</span>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-card">
+                                <h5 class="mb-2">Winter Break</h5>
+                                <p class="text-muted mb-0">School closed for winter vacation</p>
+                                <div class="timeline-icon">
+                                    <i class="fas fa-snowflake"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 6 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            <span class="date-day">10-14</span>
+                            <span class="date-month">Mar</span>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-card">
+                                <h5 class="mb-2">Spring Break</h5>
+                                <p class="text-muted mb-0">School closed for spring vacation</p>
+                                <div class="timeline-icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 7 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            <span class="date-day">10</span>
+                            <span class="date-month">Apr</span>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-card">
+                                <h5 class="mb-2">Eid ul-Fitr</h5>
+                                <p class="text-muted mb-0">School closed for Eid celebrations</p>
+                                <div class="timeline-icon">
+                                    <i class="fas fa-mosque"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 8 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            <span class="date-day">15</span>
+                            <span class="date-month">Jun</span>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-card">
+                                <h5 class="mb-2">Last Day of School</h5>
+                                <p class="text-muted mb-0">Graduation ceremony and awards day</p>
+                                <div class="timeline-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-5">
+                    <a href="#" class="btn btn-primary btn-lg px-4">
+                        <i class="fas fa-download me-2"></i> Download Full Calendar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-about">
+                        <img src="images/logo-white.png" alt="Al Hamdulillah Academy" class="mb-3" height="60">
+                        <p>Al Hamdulillah Academy is a premier Islamic educational institution committed to academic excellence and Islamic moral values for primary and secondary students.</p>
+                        <div class="social-links mt-4">
+                            <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="footer-title mb-4">Quick Links</h5>
+                    <ul class="footer-links list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white">Home</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white">About Us</a></li>
+                        <li class="mb-2"><a href="academics.html" class="text-white">Academics</a></li>
+                        <li class="mb-2"><a href="admissions.html" class="text-white">Admissions</a></li>
+                        <li class="mb-2"><a href="gallery.html" class="text-white">Gallery</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="footer-title mb-4">Contact Info</h5>
+                    <ul class="footer-contact list-unstyled">
+                        <li class="mb-3"><i class="fas fa-map-marker-alt me-2"></i> 123 Islamic Way, Muslim Town, Country</li>
+                        <li class="mb-3"><i class="fas fa-phone-alt me-2"></i> +123 456 7890</li>
+                        <li class="mb-3"><i class="fas fa-envelope me-2"></i> info@alhamdulillahacademy.edu</li>
+                        <li><i class="fas fa-clock me-2"></i> Mon-Fri: 8:00 AM - 4:00 PM</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="footer-title mb-4">Newsletter</h5>
+                    <p>Subscribe to our newsletter for updates and announcements.</p>
+                    <form class="newsletter-form">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 Al Hamdulillah Academy. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed with <i class="fas fa-heart text-danger"></i> by Muslim Developers</p>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top btn btn-primary rounded-circle"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
 </body>
 </html>
