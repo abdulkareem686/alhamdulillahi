@@ -114,3 +114,57 @@ const animateOnScroll = function() {
 };
 
 window.addEventListener('load', animateOnScroll);
+
+// Islamic-Themed 10-Second Page Loader
+document.addEventListener('DOMContentLoaded', function() {
+    const pageLoader = document.getElementById('pageLoader');
+    const progressBar = document.getElementById('loaderProgress');
+    const percentage = document.getElementById('percentage');
+    const letters = document.querySelectorAll('.letter');
+    
+    // Start the 10-second countdown
+    let progress = 0;
+    const duration = 1000; // 10 seconds in milliseconds
+    const intervalTime = 50; // Update every 50ms for smooth progress
+    const increments = 100 / (duration / intervalTime);
+    
+    // Animate letters one by one
+    letters.forEach((letter, index) => {
+        setTimeout(() => {
+            letter.style.animation = `letterAppear 0.5s forwards ${index * 0.1}s`;
+        }, index * 150);
+    });
+    
+    // Update progress bar
+    const progressInterval = setInterval(() => {
+        progress += increments;
+        if (progress >= 100) {
+            progress = 100;
+            clearInterval(progressInterval);
+            
+            // Hide loader after completion
+            setTimeout(() => {
+                pageLoader.classList.add('loader-hidden');
+                
+                // Remove loader from DOM after animation completes
+                pageLoader.addEventListener('transitionend', function() {
+                    if (pageLoader.classList.contains('loader-hidden')) {
+                        pageLoader.style.display = 'none';
+                    }
+                });
+            }, 500);
+        }
+        
+        progressBar.style.width = progress + '%';
+        percentage.textContent = Math.round(progress) + '%';
+    }, intervalTime);
+    
+    // Ensure loader stays for at least 10 seconds even if page loads faster
+    setTimeout(() => {
+        if (progress < 100) {
+            progress = 100;
+            progressBar.style.width = '100%';
+            percentage.textContent = '100%';
+        }
+    }, duration);
+});
